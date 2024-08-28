@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador 1</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/Logo.png">
+    </header>
+    <main class="presentacion">
+        <section class="presentacion__contenidoIni">
+            <textarea class="presentacion__contenidoIni__areaTexto" id="valorTextoInicial" placeholder="ingrese el texto aqui" rows="10" cols="30"></textarea>
+            <!-- <input id="valorIni" class="presentacion__contenidoIni__input"> -->
+            <div class="presentacion__contenidoIni__aviso">
+                <img src="./assets/bi_exclamation-circle-fill.png" alt="Aviso de entrada de texto">
+                <p class="presentacion__contenidoIni__aviso__texto">Solo letras minúsculas y sin acentos</p>
+            </div>
+            
+            <div class="presentacion__contenidoIni__botones">
+                <button onclick="encriptarTexto();" class="presentacion__contenido__boton1" id="botonEncriptar">Encriptar</button>
+                <button onclick="desencriptarTexto();" class="presentacion__contenido__boton2">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="presentacion__contenidoRes">
+            <img class="presentacion__contenidoRes__persona" src="./assets/Muñeco.png" alt="Buscando la respuesta" id="imagenPersona">
+            <textarea class="presentacion__contenidoRes__areaTexto" id="valorTextoResultado" rows="10" cols="30"></textarea>
+            <h3 class="presentacion__contenidoRes__titulo">Ningun mensaje fue encontrado</h3>
+            <p class="presentacion__contenidoRes__texto">ingresa el texto que deseas encriptar o desencriptar.</p>
+            <div class="presentacion__contenidoRes__botones">
+                <button onclick="copiarTextoE();" id="copiarT" class="presentacion__contenido__boton2">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    
+    <script src="app.js"></script>
+    
+</body>
+</html>
